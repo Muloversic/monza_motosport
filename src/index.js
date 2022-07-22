@@ -5,14 +5,13 @@ import * as bootstrap from 'bootstrap';
 import 'normalize.css';
 import './styles/main.scss';
 
-// const dropdown = document.querySelector('.dropdown-el');
-// dropdown.addEventListener('click', function (e) {
-//   e.preventDefault();
-//   e.stopPropagation();
-//   this.classList.toggle('expanded');
-//   const attFor = e.target.getAttribute('for');
-//   const selectedItem = document.querySelector(`#${attFor}`);
-//   if (selectedItem) selectedItem.setAttribute('checked', true);
-// });
 
-// document.addEventListener('click', () => dropdown.classList.remove('expanded'));
+const yearMenu = document.querySelectorAll('.dropdown-menu');
+[...yearMenu].forEach((menu) => {
+  const menuType = menu.getAttribute('aria-labelledby');
+  menu.addEventListener('click', (e) => {
+    const text = e.target.textContent;
+    const targetButton = document.querySelector(`#${menuType}`);
+    targetButton.textContent = text;
+  });
+});
