@@ -4,3 +4,97 @@ body {
   font-family: 'Noto Sans', sans-serif;
   //   font-family: 'Poppins', sans-serif;
 }
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1240px;
+    padding: 0;
+  }
+}
+
+/* HEADER============================================*/
+.header {
+  background: url(../images/main_bg.png) center/cover no-repeat;
+  .container-fluid {
+    padding: 0;
+  }
+
+  .navbar-toggler {
+    border-color: $background;
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 68px;
+    color: $header-text;
+    margin-top: 118px;
+  }
+
+  &-text {
+    color: $header-text;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  &-button {
+    border: 2px solid $header-text;
+    border-radius: 15px;
+    color: $header-text;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    padding: 13px 90px 13px 90px;
+    margin: 57px 0 148px 0;
+    @media (max-width: 350px) {
+      width: 100%;
+      padding: 13px 0;
+    }
+
+    &:hover {
+      border: 2px solid $header-text;
+      background: $background;
+      color: $text;
+    }
+
+    &:active {
+      border: 2px solid $header-text;
+      background: transparent;
+      color: $header-text;
+    }
+
+    &:disabled {
+      opacity: 0.4;
+    }
+  }
+
+  .nav-link-custom {
+    color: $header-text;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    // &:hover {
+    //   color: $brand;
+    // }
+  }
+
+  .fa-brands.instagram {
+    color: $header-text;
+    font-size: 20px;
+    // &:hover {
+    //   color: blueviolet;
+    // }
+  }
+
+  .fa-brands.facebook {
+    color: $header-text;
+    font-size: 18px;
+    // &:hover {
+    //   color: rgb(94, 124, 189);
+    // }
+  }
+}
