@@ -131,6 +131,14 @@ body {
     height: 48px;
     border: 1px solid $select-border;
     border-radius: 15px;
+    @media (max-width: 1200px) {
+      width: 135px !important;
+    }
+
+    @media (max-width: 767px) {
+      width: 100% !important;
+    }
+
     &::after {
       content: url(../images/arrow.png);
       border: none;
@@ -166,7 +174,16 @@ body {
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
     border-radius: 15px;
-    width: 170px;
+    min-width: unset;
+    width: 100%;
+    @media (max-width: 1200px) {
+      width: 135px !important;
+    }
+
+    @media (max-width: 767px) {
+      width: 100% !important;
+    }
+
     &.show {
       inset: unset !important;
       transform: translate(0px, 0px) !important;
@@ -180,7 +197,9 @@ body {
     }
   }
 
-  .col-smaller {
-    width: 15%;
+  @media (min-width: 1400px) {
+    .col-smaller {
+      width: 15%;
+    }
   }
 }
