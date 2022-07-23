@@ -190,23 +190,30 @@
             </div>
           </div>
           <div class="col-12 col-sm-6 text-sm-end mt-3 mt-sm-0">
-            <div class="dropdown" id="sort">
+            <div class="dropdown" id="specs">
               <span class="main-sort-label">Sort by</span>
               <button
                 class="btn dropdown-toggle main-sort-btn"
                 type="button"
-                id="yearMenu"
+                id="sortSpecs"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Year
+                Publication date (ascending)
               </button>
-              <ul class="dropdown-menu" aria-labelledby="yearMenu">
-                <li><button class="dropdown-item">2019</button></li>
-                <li class="mt-3"><button class="dropdown-item main-sort-type">Publication date (ascending)</button></li>
-                <li class="mt-3"><button class="dropdown-item main-sort-type">2016</button></li>
-                <li class="mt-3"><button class="dropdown-item main-sort-type">2015</button></li>
-                <li class="mt-3"><button class="dropdown-item main-sort-type">2014</button></li>
+              <ul class="dropdown-menu menu-car-specs" aria-labelledby="sortSpecs">
+                <li class="mt-2">
+                  <button class="dropdown-item main-sort-type text-start">Publication date (descending)</button>
+                </li>
+                <li class="mt-2"><button class="dropdown-item main-sort-type text-start">Price (ascending)</button></li>
+                <li class="mt-2"><button class="dropdown-item main-sort-type text-start">Mileage (ascending)</button></li>
+                <li class="mt-2"><button class="dropdown-item main-sort-type text-start">Mileage (descending)</button></li>
+                <li class="mt-2">
+                  <button class="dropdown-item main-sort-type text-start">Performance (ascending)</button>
+                </li>
+                <li class="mt-2">
+                  <button class="dropdown-item main-sort-type text-start">Performance (descending)</button>
+                </li>
               </ul>
             </div>
           </div>

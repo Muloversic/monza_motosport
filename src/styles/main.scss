@@ -2,6 +2,7 @@
 body {
   box-sizing: border-box;
   font-family: 'Noto Sans', sans-serif;
+  background: #e5e5e5;
   //   font-family: 'Poppins', sans-serif;
 }
 
@@ -102,7 +103,6 @@ body {
 /*MAIN===============================================*/
 .main {
   margin: 100px 0;
-
   &-title {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -253,16 +253,34 @@ body {
   &-sort-btn {
     position: relative;
     border: none;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    color: $text-possible-option;
+
+    &.show {
+      color: $text-possible-option;
+    }
+
     &:hover {
       border: none;
+      color: $brand;
     }
 
     &::after {
       content: url(../images/ascending.png);
+      border: none;
       position: absolute;
-      top: -4px;
-      left: 5px;
+      top: 7px;
+      left: -1px;
     }
+  }
+
+  .menu-car-specs {
+    width: 191px;
+    border: none;
   }
 
   &-sort-type {
@@ -270,7 +288,7 @@ body {
     font-size: 12px;
     line-height: 16px;
     text-align: right;
-    color: $text-possible-option;
+    color: $text-dark;
   }
 
   .card-title {
