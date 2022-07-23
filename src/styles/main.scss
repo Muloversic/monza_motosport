@@ -124,6 +124,22 @@ body {
     width: 290px;
     border-radius: 15px;
     text-align: center;
+    border: 2px solid $brand;
+    &:hover {
+      border: 2px solid $brand;
+    }
+
+    &:focus {
+      background-color: $brand;
+      border: 2px solid $brand;
+      color: $text-light;
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      background-color: $brand;
+      color: $text-light;
+    }
   }
 
   .btn-car-filter {
