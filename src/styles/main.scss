@@ -354,4 +354,12 @@ body {
     left: 50%;
     transform: translate(-50%, -20%);
   }
+
+  .card-sold {
+    opacity: 0.5;
+  }
+
+  .card-image-sold {
+    filter: grayscale(90%);
+  }
 }
