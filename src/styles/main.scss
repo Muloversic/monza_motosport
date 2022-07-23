@@ -126,7 +126,7 @@ body {
     text-align: center;
   }
 
-  .dropdown-toggle {
+  .btn-car-filter {
     width: 170px;
     height: 48px;
     border: 1px solid $select-border;
@@ -169,7 +169,7 @@ body {
     }
   }
 
-  .dropdown-menu {
+  .car-menu-filter {
     border-top: none;
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
@@ -278,10 +278,17 @@ body {
     font-size: 17px;
     line-height: 23px;
     color: $text-dark;
+    &:hover {
+      text-decoration: underline;
+    }
+
     &-light {
       font-family: 'Poppins';
       margin-right: 8px;
       color: $text-possible-option;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 

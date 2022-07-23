@@ -78,7 +78,7 @@
           <div class="col-sm-4 col-md-2 col-smaller">
             <div class="dropdown" id="year">
               <button
-                class="btn dropdown-toggle text-start w-100"
+                class="btn btn-car-filter dropdown-toggle text-start w-100"
                 type="button"
                 id="yearMenu"
                 data-bs-toggle="dropdown"
@@ -86,7 +86,7 @@
               >
                 Year
               </button>
-              <ul class="dropdown-menu" aria-labelledby="yearMenu">
+              <ul class="dropdown-menu car-menu-filter" aria-labelledby="yearMenu">
                 <li><button class="dropdown-item">2019</button></li>
                 <li class="mt-3"><button class="dropdown-item">2017</button></li>
                 <li class="mt-3"><button class="dropdown-item">2016</button></li>
@@ -98,7 +98,7 @@
           <div class="col-sm-4 mt-2 mt-sm-0 col-md-2 col-smaller">
             <div class="dropdown" id="make">
               <button
-                class="btn dropdown-toggle text-start w-100"
+                class="btn btn-car-filter dropdown-toggle text-start w-100"
                 type="button"
                 id="makeMenu"
                 data-bs-toggle="dropdown"
@@ -106,7 +106,7 @@
               >
                 Make
               </button>
-              <ul class="dropdown-menu" aria-labelledby="makeMenu">
+              <ul class="dropdown-menu car-menu-filter" aria-labelledby="makeMenu">
                 <li><button class="dropdown-item">Honda</button></li>
                 <li class="mt-3"><button class="dropdown-item">Kia</button></li>
                 <li class="mt-3"><button class="dropdown-item">Toyota</button></li>
@@ -120,7 +120,7 @@
           <div class="col-sm-4 mt-2 mt-sm-0 col-md-2 col-smaller">
             <div class="dropdown" id="model">
               <button
-                class="btn dropdown-toggle text-start w-100"
+                class="btn btn-car-filter dropdown-toggle text-start w-100"
                 type="button"
                 id="modelMenu"
                 data-bs-toggle="dropdown"
@@ -128,7 +128,7 @@
               >
                 Model
               </button>
-              <ul class="dropdown-menu" aria-labelledby="modelMenu">
+              <ul class="dropdown-menu car-menu-filter" aria-labelledby="modelMenu">
                 <li><button class="dropdown-item">Honda</button></li>
                 <li class="mt-3"><button class="dropdown-item">Kia</button></li>
                 <li class="mt-3"><button class="dropdown-item">Toyota</button></li>
@@ -142,7 +142,7 @@
           <div class="col-sm-4 mt-2 mt-md-0 col-md-2 col-smaller">
             <div class="dropdown" id="trim">
               <button
-                class="btn dropdown-toggle text-start w-100"
+                class="btn btn-car-filter dropdown-toggle text-start w-100"
                 type="button"
                 id="trimMenu"
                 data-bs-toggle="dropdown"
@@ -150,7 +150,7 @@
               >
                 Trim
               </button>
-              <ul class="dropdown-menu" aria-labelledby="trimMenu">
+              <ul class="dropdown-menu car-menu-filter" aria-labelledby="trimMenu">
                 <li><button class="dropdown-item">Trim 1</button></li>
                 <li class="mt-3"><button class="dropdown-item">Trim 2</button></li>
                 <li class="mt-3"><button class="dropdown-item">Trim 3</button></li>
@@ -161,7 +161,7 @@
           <div class="col-sm-4 mt-2 mt-md-0 col-md-2 col-smaller">
             <div class="dropdown" id="milage">
               <button
-                class="btn dropdown-toggle text-start w-100"
+                class="btn btn-car-filter dropdown-toggle text-start w-100"
                 type="button"
                 id="milageMenu"
                 data-bs-toggle="dropdown"
@@ -169,7 +169,7 @@
               >
                 Milage
               </button>
-              <ul class="dropdown-menu" aria-labelledby="milageMenu">
+              <ul class="dropdown-menu car-menu-filter" aria-labelledby="milageMenu">
                 <li><button class="dropdown-item">69,000 km</button></li>
                 <li class="mt-3"><button class="dropdown-item">39,850 km</button></li>
                 <li class="mt-3"><button class="dropdown-item">104,000 km</button></li>
@@ -190,9 +190,25 @@
             </div>
           </div>
           <div class="col-12 col-sm-6 text-sm-end mt-3 mt-sm-0">
-            <span class="main-sort-label">Sort by</span>
-            <button class="btn main-sort-btn"></button>
-            <span class="main-sort-type">Publication date (ascending)</span>
+            <div class="dropdown" id="sort">
+              <span class="main-sort-label">Sort by</span>
+              <button
+                class="btn dropdown-toggle main-sort-btn"
+                type="button"
+                id="yearMenu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Year
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="yearMenu">
+                <li><button class="dropdown-item">2019</button></li>
+                <li class="mt-3"><button class="dropdown-item main-sort-type">Publication date (ascending)</button></li>
+                <li class="mt-3"><button class="dropdown-item main-sort-type">2016</button></li>
+                <li class="mt-3"><button class="dropdown-item main-sort-type">2015</button></li>
+                <li class="mt-3"><button class="dropdown-item main-sort-type">2014</button></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="row row-cols-1 row-cols-md-4 g-4 mt-3">
