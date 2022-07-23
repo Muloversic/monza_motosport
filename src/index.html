@@ -75,35 +75,110 @@
       <main class="main d-flex flex-column">
         <h2 class="main-title">CURRENT OFFERS</h2>
         <div class="row align-items-center">
-          <div class="col-2">
+          <div class="col-2 col-smaller">
             <div class="dropdown" id="year">
               <button
-                class="btn btn-secondary dropdown-toggle"
+                class="btn dropdown-toggle text-start"
                 type="button"
                 id="yearMenu"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown button
+                Year
               </button>
               <ul class="dropdown-menu" aria-labelledby="yearMenu">
-                <li><button class="dropdown-item" >Action</button></li>
-                <li><button class="dropdown-item" >Another action</button></li>
-                <li><button class="dropdown-item" >Something else here</a></li>
+                <li><button class="dropdown-item">2019</button></li>
+                <li class="mt-3"><button class="dropdown-item">2017</button></li>
+                <li class="mt-3"><button class="dropdown-item">2016</button></li>
+                <li class="mt-3"><button class="dropdown-item">2015</button></li>
+                <li class="mt-3"><button class="dropdown-item">2014</button></li>
               </ul>
             </div>
-            <!-- <span class="dropdown-el">
-              <input type="radio" name="sortType" value="Year" checked="checked" id="sort-Year" /><label for="sort-Year"
-                >Year</label
-              >
-              <input type="radio" name="sortType" value="2019" id="sort-2019" /><label for="sort-2019">2019</label>
-              <input type="radio" name="sortType" value="2017" id="sort-2017" /><label for="sort-2017">2017</label>
-              <input type="radio" name="sortType" value="2016" id="sort-2016" /><label for="sort-2016">2016</label>
-              <input type="radio" name="sortType" value="2015" id="sort-2015" /><label for="sort-2015">2015</label>
-              <input type="radio" name="sortType" value="2014" id="sort-2014" /><label for="sort-2014">2014</label>
-            </span> -->
           </div>
-          <div class="col-2">
+          <div class="col-2 col-smaller">
+            <div class="dropdown" id="make">
+              <button
+                class="btn dropdown-toggle text-start"
+                type="button"
+                id="makeMenu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Make
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="makeMenu">
+                <li><button class="dropdown-item">Honda</button></li>
+                <li class="mt-3"><button class="dropdown-item">Kia</button></li>
+                <li class="mt-3"><button class="dropdown-item">Toyota</button></li>
+                <li class="mt-3"><button class="dropdown-item">Volkswagen</button></li>
+                <li class="mt-3"><button class="dropdown-item">Toyota</button></li>
+                <li class="mt-3"><button class="dropdown-item">Volkswagen</button></li>
+                <li class="mt-3"><button class="dropdown-item">Honda</button></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2 col-smaller">
+            <div class="dropdown" id="model">
+              <button
+                class="btn dropdown-toggle text-start"
+                type="button"
+                id="modelMenu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Model
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="modelMenu">
+                <li><button class="dropdown-item">Honda</button></li>
+                <li class="mt-3"><button class="dropdown-item">Kia</button></li>
+                <li class="mt-3"><button class="dropdown-item">Toyota</button></li>
+                <li class="mt-3"><button class="dropdown-item">Volkswagen</button></li>
+                <li class="mt-3"><button class="dropdown-item">Toyota</button></li>
+                <li class="mt-3"><button class="dropdown-item">Volkswagen</button></li>
+                <li class="mt-3"><button class="dropdown-item">Honda</button></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2 col-smaller">
+            <div class="dropdown" id="trim">
+              <button
+                class="btn dropdown-toggle text-start"
+                type="button"
+                id="trimMenu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Trim
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="trimMenu">
+                <li><button class="dropdown-item">Trim 1</button></li>
+                <li class="mt-3"><button class="dropdown-item">Trim 2</button></li>
+                <li class="mt-3"><button class="dropdown-item">Trim 3</button></li>
+                <li class="mt-3"><button class="dropdown-item">Trim 4</button></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2 col-smaller">
+            <div class="dropdown" id="milage">
+              <button
+                class="btn dropdown-toggle text-start"
+                type="button"
+                id="milageMenu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Milage
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="milageMenu">
+                <li><button class="dropdown-item">69,000 km</button></li>
+                <li class="mt-3"><button class="dropdown-item">39,850 km</button></li>
+                <li class="mt-3"><button class="dropdown-item">104,000 km</button></li>
+                <li class="mt-3"><button class="dropdown-item">99,000 km</button></li>
+                <li class="mt-3"><button class="dropdown-item">39,850 km</button></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
             <button class="btn main-car-amount">40 cars</button>
           </div>
         </div>

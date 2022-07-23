@@ -111,7 +111,7 @@ body {
     text-transform: uppercase;
     color: $h2-option;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 75px;
   }
 
   &-car-amount {
@@ -139,11 +139,22 @@ body {
       top: 0.9em;
     }
 
-    &[selected] {
+    &.show {
+      font-weight: 600;
+      border-bottom: none;
+      border-bottom-left-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      &::after {
+        display: none;
+      }
+    }
+
+    &.selected {
       border: 1px solid $brand;
     }
 
-    &.show {
+    &.show.selected {
+      border: 1px solid $select-border;
       border-bottom: none;
       border-bottom-left-radius: 0 !important;
       border-bottom-right-radius: 0 !important;
@@ -162,97 +173,14 @@ body {
     }
   }
 
-  //   =======
+  .dropdown-item {
+    &:hover {
+      color: $brand;
+      background-color: unset;
+    }
+  }
 
-  //   .dropdown-el {
-  //     width: 170px;
-  //     position: relative;
-  //     display: inline-block;
-  //     margin-right: 1em;
-  //     min-height: 2em;
-  //     max-height: 3em;
-  //     overflow: hidden;
-  //     top: 0.3em;
-  //     cursor: pointer;
-  //     text-align: left;
-  //     white-space: nowrap;
-  //     outline: none;
-  //     border: 1px solid $select-border;
-  //     border-radius: 15px;
-  //     background-color: #fff;
-  //     transition: $timing all ease-in-out;
-
-  //     input {
-  //       position: absolute;
-  //       width: 1px;
-  //       height: 1px;
-  //       display: inline-block;
-  //       opacity: 0.01;
-  //     }
-
-  //     label {
-  //       position: relative;
-  //       font-weight: 400;
-  //       font-size: 15px;
-  //       color: $text-dark;
-  //       display: block;
-  //       height: 2em;
-  //       line-height: 2.8em;
-  //       padding-left: 1em;
-  //       padding-right: 3em;
-  //       cursor: pointer;
-  //       margin-top: 5px;
-  //       transition: $timing color ease-in-out;
-  //       &:nth-child(2) {
-  //         margin-top: 2.4em;
-  //       }
-  //     }
-
-  //     input:checked + label {
-  //       display: block;
-  //       border-top: none;
-  //       position: absolute;
-  //       top: 0;
-  //       width: 100%;
-
-  //       &:nth-child(2) {
-  //         margin-top: 8px;
-  //         position: relative;
-  //       }
-  //     }
-
-  //     &::after {
-  //       content: url(../images/arrow.png);
-  //       position: absolute;
-  //       right: 0.8em;
-  //       top: 0.9em;
-  //     }
-
-  //     &:focus {
-  //       border: 1px solid $brand;
-  //     }
-
-  //     &.expanded {
-  //       border: 1px solid $select-border;
-  //       background: #fff;
-  //       border-radius: 15px;
-  //       padding: 0;
-  //       max-height: 15em;
-
-  //       label {
-  //         &:hover {
-  //           color: $brand;
-  //         }
-  //       }
-
-  //       input:checked + label {
-  //         color: $text-dark;
-  //         font-weight: 600;
-  //       }
-
-  //       &::after {
-  //         display: none;
-  //       }
-  //     }
-  //   }
+  .col-smaller {
+    width: 15%;
+  }
 }
