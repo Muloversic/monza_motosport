@@ -272,4 +272,86 @@ body {
     text-align: right;
     color: $text-possible-option;
   }
+
+  .card-title {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+    color: $text-dark;
+    &-light {
+      font-family: 'Poppins';
+      margin-right: 8px;
+      color: $text-possible-option;
+    }
+  }
+
+  .card-text-item {
+    position: relative;
+    list-style-type: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: $text-possible-option;
+    margin-left: 16px;
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 18px;
+      width: 1px;
+      background-color: $text-possible-option;
+    }
+
+    &:nth-of-type(2) {
+      &::before {
+        left: -12%;
+      }
+    }
+
+    &:nth-of-type(3) {
+      &::before {
+        left: -21%;
+      }
+    }
+
+    &:first-of-type {
+      margin-left: 0;
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .card-text-big {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: $text-dark;
+  }
+
+  .badge-new {
+    width: 66px;
+    padding: 6px 0;
+    top: 48%;
+    left: 0%;
+    border-radius: 15px;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+    background-color: $text-dark;
+  }
+
+  .badge-sold {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    color: #fff;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+  }
 }
