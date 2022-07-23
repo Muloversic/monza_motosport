@@ -202,4 +202,74 @@ body {
       width: 15%;
     }
   }
+
+  .input-label-custom {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.523077px;
+    color: $text-possible-option;
+  }
+
+  .input-custom {
+    border: 2px solid $text-possible-option;
+    &:checked {
+      border: none;
+      background-color: $brand;
+    }
+
+    &:disabled {
+      background-color: $text-possible-option;
+      opacity: 1;
+    }
+
+    &:checked + .input-label-custom {
+      color: $brand;
+    }
+
+    &:disabled + .input-label-custom {
+      color: $text-possible-option;
+      opacity: 1;
+    }
+
+    &:checked:focus {
+      border: unset;
+    }
+
+    &:focus {
+      border: 2px solid $text-possible-option;
+      outline: 0;
+      box-shadow: unset;
+    }
+  }
+
+  &-sort-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: $text-dark;
+  }
+
+  &-sort-btn {
+    position: relative;
+    border: none;
+    &:hover {
+      border: none;
+    }
+
+    &::after {
+      content: url(../images/ascending.png);
+      position: absolute;
+      top: -4px;
+      left: 5px;
+    }
+  }
+
+  &-sort-type {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    color: $text-possible-option;
+  }
 }
