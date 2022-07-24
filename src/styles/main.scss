@@ -540,7 +540,8 @@ body {
 
 /*QUESTIONS ==============================*/
 .questions {
-  margin: 100px 0 150px 0;
+  margin: 100px auto 150px auto;
+  max-width: 820px;
   &-title {
     @include heading;
   }
