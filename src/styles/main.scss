@@ -309,21 +309,31 @@ body {
   }
 
   .card-title {
+    position: relative;
     font-weight: 400;
     font-size: 17px;
     line-height: 23px;
     color: $text-dark;
+    margin-left: 8px;
     &:hover {
-      text-decoration: underline;
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $text-dark;
+      }
     }
 
     &-light {
-      font-family: 'Poppins';
-      margin-right: 8px;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 26px;
       color: $text-possible-option;
-      &:hover {
-        text-decoration: none;
-      }
+      cursor: default;
     }
   }
 
