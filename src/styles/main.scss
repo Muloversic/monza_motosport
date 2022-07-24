@@ -603,3 +603,21 @@ body {
     }
   }
 }
+
+/*FOOTER===============================*/
+.footer {
+  background-color: $text-dark;
+  &-socials {
+    width: 100%;
+    @media (min-width: 1200px) {
+      width: 75%;
+    }
+
+    .social-item {
+      list-style-type: none;
+    }
+  }
+  .nav-link-custom {
+    color: $text-light;
+  }
+}
