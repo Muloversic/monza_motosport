@@ -1,0 +1,10 @@
+@mixin heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 75px;
+  text-transform: uppercase;
+  color: $h2-option;
+  text-align: center;
+  margin-bottom: 75px;
+}
