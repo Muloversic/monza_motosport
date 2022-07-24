@@ -287,11 +287,22 @@ body {
     }
 
     &::after {
-      content: url(../images/ascending.png);
       border: none;
       position: absolute;
       top: 7px;
       left: -1px;
+    }
+
+    &.sort-ascending {
+      &::after {
+        content: url(../images/ascending.png);
+      }
+    }
+
+    &.sort-descending {
+      &::after {
+        content: url(../images/descending.png);
+      }
     }
   }
 

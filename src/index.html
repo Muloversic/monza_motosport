@@ -193,26 +193,41 @@
             <div class="dropdown" id="specs">
               <span class="main-sort-label">Sort by</span>
               <button
-                class="btn dropdown-toggle main-sort-btn"
+                class="btn dropdown-toggle main-sort-btn sort-ascending"
                 type="button"
                 id="sortSpecs"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                data-sort="ascending"
               >
                 Publication date (ascending)
               </button>
               <ul class="dropdown-menu menu-car-specs" aria-labelledby="sortSpecs">
                 <li class="mt-2">
-                  <button class="dropdown-item main-sort-type text-start">Publication date (descending)</button>
-                </li>
-                <li class="mt-2"><button class="dropdown-item main-sort-type text-start">Price (ascending)</button></li>
-                <li class="mt-2"><button class="dropdown-item main-sort-type text-start">Mileage (ascending)</button></li>
-                <li class="mt-2"><button class="dropdown-item main-sort-type text-start">Mileage (descending)</button></li>
-                <li class="mt-2">
-                  <button class="dropdown-item main-sort-type text-start">Performance (ascending)</button>
+                  <button class="dropdown-item main-sort-type text-start" data-sort="descending">
+                    Publication date (descending)
+                  </button>
                 </li>
                 <li class="mt-2">
-                  <button class="dropdown-item main-sort-type text-start">Performance (descending)</button>
+                  <button class="dropdown-item main-sort-type text-start" data-sort="ascending">Price (ascending)</button>
+                </li>
+                <li class="mt-2">
+                  <button class="dropdown-item main-sort-type text-start" data-sort="ascending">Mileage (ascending)</button>
+                </li>
+                <li class="mt-2">
+                  <button class="dropdown-item main-sort-type text-start" data-sort="descending">
+                    Mileage (descending)
+                  </button>
+                </li>
+                <li class="mt-2">
+                  <button class="dropdown-item main-sort-type text-start" data-sort="ascending">
+                    Performance (ascending)
+                  </button>
+                </li>
+                <li class="mt-2">
+                  <button class="dropdown-item main-sort-type text-start" data-sort="descending">
+                    Performance (descending)
+                  </button>
                 </li>
               </ul>
             </div>

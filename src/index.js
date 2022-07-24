@@ -17,3 +17,23 @@ const selectMenu = document.querySelectorAll('.dropdown-menu');
     targetButton.classList.add('selected');
   });
 });
+
+const sortButton = document.querySelector('.main-sort-btn');
+const menuCarSpecs = document.querySelector('.menu-car-specs');
+menuCarSpecs.addEventListener('click', (e) => {
+  const sortType = e.target.getAttribute('data-sort');
+  const menuId = menuCarSpecs.getAttribute('aria-labelledby');
+  const targetButton = document.querySelector(`#${menuId}`);
+  const buttonAttr = targetButton.getAttribute('data-sort');
+  e.target.setAttribute('data-sort', buttonAttr);
+  targetButton.setAttribute('data-sort', sortType);
+  if (sortType === 'ascending') {
+    sortButton.classList.add('sort-ascending');
+    sortButton.classList.remove('sort-descending');
+  }
+
+  if (sortType === 'descending') {
+    sortButton.classList.add('sort-descending');
+    sortButton.classList.remove('sort-ascending');
+  }
+});
