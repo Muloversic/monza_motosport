@@ -415,6 +415,13 @@ body {
     @media (max-width: 767px) {
       top: 64%;
     }
+
+    @media (max-width: 462px) {
+      top: 59%;
+    }
+    @media (max-width: 390px) {
+      top: 48%;
+    }
   }
 
   .badge-sold {
