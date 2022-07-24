@@ -61,3 +61,8 @@ menuCarSpecs.addEventListener('click', (e) => {
     );
   });
 })();
+
+const collapses = document.querySelectorAll('.questions-collaps-item');
+[...collapses].forEach((collapseElement) =>
+  collapseElement.addEventListener('click', () => collapseElement.classList.toggle('show'))
+);
