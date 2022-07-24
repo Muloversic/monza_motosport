@@ -4,7 +4,6 @@ body {
   box-sizing: border-box;
   font-family: 'Noto Sans', sans-serif;
   background: #e5e5e5;
-  //   font-family: 'Poppins', sans-serif;
 }
 
 @media (min-width: 1400px) {
@@ -79,25 +78,16 @@ body {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    // &:hover {
-    //   color: $brand;
-    // }
   }
 
   .fa-brands.instagram {
     color: $text-light;
     font-size: 20px;
-    // &:hover {
-    //   color: blueviolet;
-    // }
   }
 
   .fa-brands.facebook {
     color: $text-light;
     font-size: 18px;
-    // &:hover {
-    //   color: rgb(94, 124, 189);
-    // }
   }
 }
 
