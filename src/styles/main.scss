@@ -399,6 +399,21 @@ body {
     line-height: 18px;
     color: #fff;
     background-color: $text-dark;
+    @media (max-width: 1400px) {
+      top: 41%;
+    }
+
+    @media (max-width: 1200px) {
+      top: 48%;
+    }
+
+    @media (max-width: 991px) {
+      top: 52%;
+    }
+	
+    @media (max-width: 767px) {
+      top: 64%;
+    }
   }
 
   .badge-sold {
