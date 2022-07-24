@@ -202,6 +202,7 @@ body {
   }
 
   .dropdown-item {
+    padding-left: 12px;
     &:hover {
       color: $brand;
       background-color: unset;
@@ -410,7 +411,7 @@ body {
     @media (max-width: 991px) {
       top: 52%;
     }
-	
+
     @media (max-width: 767px) {
       top: 64%;
     }
