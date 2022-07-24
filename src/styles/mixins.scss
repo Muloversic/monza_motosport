@@ -8,3 +8,16 @@
   text-align: center;
   margin-bottom: 75px;
 }
+
+@mixin collapsPseudo($color, $content, $size) {
+  &::before {
+    content: $content;
+    display: block;
+    position: absolute;
+    font-size: $size;
+    color: $color !important;
+    top: 50%;
+    right: 2%;
+    transform: translate(0, -50%);
+  }
+}
